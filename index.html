@@ -86,11 +86,17 @@
                         </table>
                     </li>
                 </ol>
-                <div class="sliders">
-                    <button class="slider-button">Первый слайд</button>
-                    <button class="slider-button">Второй слайд</button>
-                    <button class="slider-button">Третий слайд</button>
-                </div>
+                <ul class="slides-switches">
+                    <li class="slide-radio">
+                        <button class="slide-button">Первый слайд</button>
+                    </li>
+                    <li class="slide-radio">
+                        <button class="slide-button">Второй слайд</button>
+                    </li>
+                    <li class="slide-radio">
+                        <button class="slide-button">Третий слайд</button>
+                    </li>
+                </ul>
             </section>
             <section class="catalog">
                 <h2 class="visually-hidden">Каталог товаров</h2>
@@ -105,26 +111,24 @@
             </section>
             <section class="services">
                 <h2 class="visually-hidden">Сервисы</h2>
-                <ul class="services-list-buttons">
-                    <li class="services-item-button button"><button>Доставка</button></li>
-                    <li class="services-item-button button"><button>Гарантия</button></li>
-                    <li class="services-item-button button"><button>Кредит</button></li>
+                <ul class="services-list-links">
+                    <li class="service-item-link button"><a href="#">Доставка</a></li>
+                    <li class="service-item-link button"><a href="#">Гарантия</a></li>
+                    <li class="service-item-link button"><a href="#">Кредит</a></li>
                 </ul>
-                <ul class="services-list">
-                    <li class="services-item">
-                        <h3 class="services-item-title">Доставка</h3>
-                        <p class="services-item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                    </li>
-                    <li class="services-item">
-                        <h3 class="services-item-title">Гарантия</h3>
-                        <p class="services-item-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> 
+                <section class="delivery">
+                    <h3 class="delivery-title">Доставка</h3>
+                    <p class="delivery-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </section>
+                <section class="warranty">
+                    <h3 class="warranty-title">Гарантия</h3>
+                    <p class="warranty-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> 
                         Товар, не дом, конечно же.</p>
-                    </li>
-                    <li class="services-item">
-                        <h3 class="services-item-title">Кредит</h3>
-                        <p class="services-item-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                    </li>
-                </ul>
+                </section>
+                <section class="credit">
+                    <h3 class="credit-title">Кредит</h3>
+                    <p class="credit-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                </section>
             </section>
             <section class="companies-logos">
                 <h2 class="visually-hidden">Производители</h2>
@@ -149,12 +153,38 @@
             <section class="contacts">
                 <h2 class="contacts__title">Контакты</h2>
                 <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                <img class="contacts__map" src="" width="" height="" alt="Ул. Строителей, 15">
+                <img class="contacts__map" src="" width="" height="" alt="г. Москва, ул. Строителей, 15">
                 <a class="button more-details" href="#">Напишите нам</a>
             </section>
         </main>
-        <footer>
-
+        <footer class="main-footer">
+            <div class="footer-top">
+                <span class="footer-logo">Device</span>
+                <ul class="footer-user-menu">
+                    <li><a href="#">Войти</a></li>
+                    <li><a href="#">Сравнить</a></li>
+                    <li><a href="#">Корзина</a></li>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <p class="footer-address">г. Москва, ул. Строителей, 15</p>
+                <ul class="footer-site-menu">
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Гарантия</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+                <p class="phone">Тел.: +7 (495) 495-95-95</p>
+            </div>
+            <div class="footer-bottom">
+                <ul class="social-buttons">
+                    <li><a href="#" class="social-button-facebook">facebook</a></li>
+                    <li><a href="#" class="social-button-instagram">instagram</a></li>
+                    <li><a href="#" class="social-button-twitter">twitter</a></li>
+                </ul>
+                <p class="copyright">
+                    <span class="icon">html academy</span>
+                </p>
+            </div>
         </footer>
     </body>
 </html>

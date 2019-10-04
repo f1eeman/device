@@ -17,12 +17,20 @@
                 </p>
                 <ul class="user-navigation">
                     <li><a href="#">Светлана Дурова</a></li>
-                    <li><a href="#">Выйти</a></li>
+                    <li>Выйти</li>
                 </ul>
                 <ul class="site-navigation">
                     <li>
                         <a href="#">Каталог товаров</a>
                         <button class="catalog-open">Open</button>
+                        <ul class="site-navigation__catalog-list">
+                            <li class="site-navigation__catalog-item"><a href="#">Виртуальная реальность</a></li>
+                            <li class="site-navigation__catalog-item site-navigation__catalog-item-current"><a>Моноподы для селфи</a></li>
+                            <li class="site-navigation__catalog-item"><a href="#">Экшн-камеры</a></li>
+                            <li class="site-navigation__catalog-item"><a href="#">Фитнес-браслеты</a></li>
+                            <li class="site-navigation__catalog-item"><a href="#">Умные часы</a></li>
+                            <li class="site-navigation__catalog-item"><a href="#">Квадрокоптеры</a></li>
+                        </ul>
                     </li>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Гарантия</a></li>
@@ -47,6 +55,8 @@
                     <li><a href="#">По цене</a></li>
                     <li><a href="#">По типу</a></li>
                     <li><a href="#">По популярности</a></li>
+                    <li><a href="#">По возрастнию</a></li>
+                    <li><a href="#">По убыванию</a></li>
                 </ul>
             </section>
             <section class="catalog">
@@ -107,7 +117,7 @@
                 </ul>
                 <ul class="pagination-list">
                     <li class="pagination-item pagination-item-prev"><a href="#">Назад</a></li>
-                    <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                    <li class="pagination-item pagination-item-current"><a>1</a></li>
                     <li class="pagination-item"><a href="#">2</a></li>
                     <li class="pagination-item"><a href="#">3</a></li>
                     <li class="pagination-item pagination-item-next"><a href="#">Вперед</a></li>
@@ -144,5 +154,13 @@
                 </p>
             </div>
         </footer>
+        <section class="modal modal-write-us">
+            <h2 class="visuall-hidden">Напишите нам</h2>
+            <!-- здесь будет форма -->
+        </section>
+        <section class="modal modal-map ">
+            <h2 class="visuall-hidden">Как до нас добраться</h2>
+            <!-- здесь будет форма -->
+        </section>
     </body>
 </html>

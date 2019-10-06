@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Device</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/style.css">
     </head>
@@ -226,15 +227,15 @@
                 <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
                     <p class="write-us-item">
                         <label for="user-name">Ваше имя:</label>
-                        <input class="name" type="text" id="user-name" value="" placeholder="Имя Фамилия">
+                        <input class="name" type="text" name="user-name" id="user-name" value="" placeholder="Имя Фамилия">
                     </p>
                     <p class="write-us-item">
                         <label for="user-email">Ваш e-mail</label>
-                        <input class="email" type="email" id="user-email" value="" placeholder="email@example.com">
+                        <input class="email" type="email" name="user-email" id="user-email" value="" placeholder="email@example.com">
                     </p>
                     <p class="write-us-item">
                         <label for="user-text">Текст письма:</label>
-                        <textarea name="text" id="user-text" cols="30" rows="10" value="" placeholder="В свободной форме"></textarea>
+                        <input class="text" type="text" name="user-text" id="user-text" value="" placeholder="В свободной форме">
                     </p>
                     <button class="button" type="submit">Отправить</button>
                 </form>

@@ -3,17 +3,24 @@
     <head>
         <meta charset="utf-8">
         <title>Device</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/style.css">
     </head>
-    <body>
+    <body class="inner-page">
         <header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="index.html">Device</a>
                 <p class="user-tools">
-                    <input type="seach" name="seach">
-                    <a href="compare.html">Сравнить</a>
-                    <a href="cart.html">Корзина</a>
+                    <div class="user-tools__box">
+                        <form class="user-tools__form" action="https://echo.htmlacademy.ru" method="POST">
+                            <label class="visually-hidden" for="user-seach">Поиск по сайту</label>
+                            <input type="seach" name="seach" id="user-seach" placeholder="Поиск по сайту">
+                            <button class="user-tools__button" type="submit">Найти</button>
+                        </form>
+                    </div>
+                    <a class="user-tools__compare" href="compare.html">Сравнить</a>
+                    <a class="user-tools__cart" href="cart.html">Корзина</a>
                 </p>
                 <ul class="user-navigation">
                     <li><a href="profile.html">Светлана Дурова</a></li>
@@ -22,7 +29,7 @@
                 <ul class="site-navigation">
                     <li>
                         <a href="catalog.html">Каталог товаров</a>
-                        <button class="catalog-open">Open</button>
+                        <button class="catalog-open" type="button">Open</button>
                         <ul class="site-navigation__catalog-list">
                             <li class="site-navigation__catalog-item"><a href="#">Виртуальная реальность</a></li>
                             <li class="site-navigation__catalog-item site-navigation__catalog-item-current"><a>Моноподы для селфи</a></li>

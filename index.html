@@ -34,8 +34,10 @@
                     </div>
                     <ul class="site-navigation">
                         <li>
-                            <a href="catalog.html">Каталог товаров</a>
-                            <button class="catalog-open" type="button">Open</button>
+                            <p class="site-navigation__wrapper">
+                                <a href="catalog.html">Каталог товаров</a>
+                                <button class="catalog-open" type="button">Open</button>
+                            </p>
                             <ul class="site-navigation__catalog-list">
                                 <li class="site-navigation__catalog-item"><a href="#">Виртуальная реальность</a></li>
                                 <li class="site-navigation__catalog-item"><a href="inner-page.html">Моноподы для селфи</a></li>
@@ -45,9 +47,15 @@
                                 <li class="site-navigation__catalog-item"><a href="#">Квадрокоптеры</a></li>
                             </ul>
                         </li>
-                        <li><a href="#service-delivery">Доставка</a></li>
-                        <li><a href="#service-warranty">Гарантия</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
+                        <li class="site-navigation__item site-navigation__delivery">
+                            <a href="#service-delivery">Доставка</a>
+                        </li>
+                        <li class="site-navigation__item site-navigation__warranty">
+                            <a href="#service-warranty">Гарантия</a>
+                        </li>
+                        <li class="site-navigation__item site-navigation__contacts">
+                            <a href="#contacts">Контакты</a>
+                        </li>
                     </ul>
                 </nav>
             </div>

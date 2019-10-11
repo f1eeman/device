@@ -67,7 +67,6 @@
         </header>
         <main class="container main-index">
             <h1 class="visually-hidden">Девайс</h1>
-            <div class="index-box">
                 <section class="popular-items">
                     <h2 class="visually-hidden">Популярные товары</h2>
                     <ol class="popular-items-list">
@@ -84,7 +83,7 @@
                                     <p class="popular-item-promo">Самая длинная палка для селфи доступна в нашем магазине. <br>
                                         Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                                     <a class="button more-details" href="#">Подробнее</a>
-                                    <table class="popular-item-characteristics-list">
+                                    <table class="popular-item-characteristics-list selfie-characteristics">
                                         <tr class="value">
                                             <td>8,5 м</td>
                                             <td>5 кг</td>
@@ -99,40 +98,53 @@
                                 </div>
                             </div>
                         </li>
-                        <!-- <li class="popular-item">
+                        <li class="popular-item">
                             <h3 class="visually-hidden">Фитнес-браслет</h3>
-                            <img class="popular-item-image" src="" width="" height="" alt="Фитнес-браслет">
-                            <span class="popular-item-number">02</span>
-                            <span class="popular-item-slogan">Худеем правильно!</span>
-                            <p class="popular-item-promo">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                            <a class="button more-details" href="#">Подробнее</a>
-                            <table class="popular-item-characteristics-list">
-                                <tr class="value">
-                                    <td>48 часов</td>
-                                </tr>
-                                <tr class="properties">
-                                    <td>Без подзарядки</td>
-                                </tr>
-                            </table>
+                            <div class="popular-item-column">
+                                <p class="popular-item-image-box popular-item-fitness-bracelet">
+                                    <img class="popular-item-image" src="images/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+                                </p>
+                                <div class="popular-item-details">
+                                    <span class="popular-item-number number-two">02</span>
+                                    <p class="popular-item-slogan">Худеем <br>
+                                        правильно!</p>
+                                    <p class="popular-item-promo">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                                    <a class="button more-details" href="#">Подробнее</a>
+                                    <table class="popular-item-characteristics-list fitness-bracelet-characteristics">
+                                        <tr class="value">
+                                            <td>48 часов</td>
+                                        </tr>
+                                        <tr class="properties">
+                                            <td>Без подзарядки</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
                         </li>
                         <li class="popular-item">
                             <h3 class="visually-hidden">Квадрокоптер</h3>
-                            <img class="popular-item-image" src="" width="" height="" alt="Квадрокоптер с лазером">
-                            <span class="popular-item-number">03</span>
-                            <span class="popular-item-slogan">Порхает как бабочка, жалит как пчела!</span>
-                            <p class="popular-item-promo">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                            <a class="button more-details" href="#">Подробнее</a>
-                            <table class="popular-item-characteristics-list">
-                                <tr class="value">
-                                    <td>800 м</td>
-                                    <td>50 м</td>
-                                </tr>
-                                <tr class="properties">
-                                    <td>Дальность полета</td>
-                                    <td>Радиус поражения</td>
-                                </tr>
-                            </table>
-                        </li> -->
+                            <div class="popular-item-column popular-item-column-quadrocopter">
+                                <p class="popular-item-image-box popular-item-quadrocopter">
+                                    <img class="popular-item-image" src="images/slider-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
+                                </p>
+                                <div class="popular-item-details">
+                                    <span class="popular-item-number number-three">03</span>
+                                    <p class="popular-item-slogan">Порхает как бабочка, жалит как пчела!</p>
+                                    <p class="popular-item-promo">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                                    <a class="button more-details" href="#">Подробнее</a>
+                                    <table class="popular-item-characteristics-list quadrocopter-characteristics">
+                                        <tr class="value">
+                                            <td>800 м</td>
+                                            <td>50 м</td>
+                                        </tr>
+                                        <tr class="properties">
+                                            <td>Дальность полета</td>
+                                            <td>Радиус поражения</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
                     </ol>
                     <ul class="slides-switches">
                         <li class="slide-radio">
@@ -150,12 +162,25 @@
             <section class="catalog">
                 <h2 class="visually-hidden">Каталог товаров</h2>
                 <ul class="catalog-list">
-                    <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
-                    <li class="catalog-item"><a href="inner-page.html">Моноподы для селфи</a></li>
-                    <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
-                    <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
-                    <li class="catalog-item"><a href="#">Умные часы</a></li>
-                    <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
+                    <li class="catalog-item">
+                        <a class="virtual-reality" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="catalog-item">
+                        <a class="monopod" href="inner-page.html">Моноподы <br>
+                            для селфи</a>
+                    </li>
+                    <li class="catalog-item">
+                        <a class="action-camera" href="#">Экшн-камеры</a>
+                    </li>
+                    <li class="catalog-item">
+                        <a class="fitness-bracelet" href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li class="catalog-item">
+                        <a class="smart-watch" href="#">Умные часы</a>
+                    </li>
+                    <li class="catalog-item">
+                        <a class="quadrocopter" href="#">Квадрокоптеры</a>
+                    </li>
                 </ul>
             </section>
             <section class="services">

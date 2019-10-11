@@ -295,41 +295,72 @@ input[type="checkbox"].visually-hidden {
 
 .popular-items {
     position: absolute;
-    top: -582px;
+    top: -584px;
     left: 80px;
+    
 }
+
+
+
+
+.popular-item:first-child {
+    display: none;
+}
+
+.popular-item:nth-child(2) {
+    display: none;
+}
+
+.popular-item:nth-child(3) {
+    display: block;
+
+}
+
+
+
 
 .popular-item-column {
     display: flex;
     justify-content: space-between;
-}
-
-.popular-item-column:first-of-type {
     width: 1040px;
     margin: 0 auto;
 }
 
-.popular-items-list,
-.slides-switches {
+.popular-items-list {
     margin: 0;
     padding: 0; 
     list-style: none;
-
 }
 
 .popular-item-selfie{
     width: 384px;
     height: 486px;
-
     margin: 0;
     margin-left: 30px;
     padding: 0;
 }
+
+.popular-item-fitness-bracelet {
+    width: 345px;
+    height: 485px;
+    margin: 0;
+    margin-left: 56px;
+    padding: 0;
+}
+
+.popular-item-quadrocopter {
+    width: 526px;
+    height: 334px;
+    margin: 0;
+    margin-top: 57px;
+    margin-left: -30px;
+    padding: 0;
+}
+
 .popular-item-details {
     position: relative;
-
     width: 500px;
-    padding-top: 70px;
+    padding-top: 72px;
 }
 
 .popular-item-details::before {
@@ -347,6 +378,7 @@ input[type="checkbox"].visually-hidden {
 
 .popular-item-number {
     position: absolute;
+    z-index: 10;
     top: -20px;
     right: -15px;
 
@@ -355,8 +387,18 @@ input[type="checkbox"].visually-hidden {
     color: #ffffff;
 }
 
+.number-two {
+    right: -12px;
+}
+
+.number-three {
+    right: -10px;
+}
 
 .popular-item-slogan {
+    position: relative;
+    z-index: 100;
+
     margin: 0;
     margin-bottom: 25px;
     padding: 0;
@@ -388,8 +430,12 @@ input[type="checkbox"].visually-hidden {
     font-weight: normal;
 }
 
-.popular-item-characteristics-list td:not(:last-child) {
+.selfie-characteristics td:not(:last-child) {
     padding-right: 80px;
+}
+
+.quadrocopter-characteristics td:not(:last-child) {
+    padding-right: 50px;
 }
 
 .popular-item-characteristics-list .properties{
@@ -399,9 +445,82 @@ input[type="checkbox"].visually-hidden {
     font-weight: 300;
 }
 
+.slides-switches {
+    display: flex;
 
+    margin: 0;
+    padding: 0; 
 
+    list-style: none;
+}
 
+.catalog {
+    outline: 2px solid red;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0; 
+
+    list-style: none;
+}
+
+.catalog-item a {
+    display: inline-block;
+    width: 160px;
+    
+    color: #000000;
+}
+
+.catalog-item:hover a::before {
+    background-color: #f0c52e;
+}
+
+.catalog-item a::before {
+    content: "";
+    display: block;
+
+    width: 160px;
+    height: 160px;
+    margin-bottom: 35px;
+
+    background-color: #f7e296;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.catalog-item a:hover ::before {
+    background-color: #f0c52e;
+}
+
+.virtual-reality::before {
+    background-image: url("../images/popular-1.svg");
+}
+
+.catalog-item .monopod::before {
+    background-image: url("../images/popular-2.svg");
+    background-position: 50% 40px;
+}
+
+.action-camera::before {
+    background-image: url("../images/popular-3.svg");
+}
+
+.fitness-bracelet::before {
+    background-image: url("../images/popular-4.svg");
+}
+
+.smart-watch::before {
+    background-image: url("../images/popular-5.svg");
+}
+
+.quadrocopter::before {
+    background-image: url("../images/popular-6.svg");
+}
 
 .main-footer {
     background-color: #464646;

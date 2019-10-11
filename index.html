@@ -33,19 +33,24 @@
                         </span>
                     </div>
                     <ul class="site-navigation">
-                        <li>
+                        <li class="link-hover-popup-open">
                             <p class="site-navigation__wrapper">
                                 <a href="catalog.html">Каталог товаров</a>
-                                <button class="catalog-open" type="button">Open</button>
                             </p>
-                            <ul class="site-navigation__catalog-list">
-                                <li class="site-navigation__catalog-item"><a href="#">Виртуальная реальность</a></li>
-                                <li class="site-navigation__catalog-item"><a href="inner-page.html">Моноподы для селфи</a></li>
-                                <li class="site-navigation__catalog-item"><a href="#">Экшн-камеры</a></li>
-                                <li class="site-navigation__catalog-item"><a href="#">Фитнес-браслеты</a></li>
-                                <li class="site-navigation__catalog-item"><a href="#">Умные часы</a></li>
-                                <li class="site-navigation__catalog-item"><a href="#">Квадрокоптеры</a></li>
-                            </ul>
+                            <div class="catalog-list-popup">
+                                <p class="catalog-list-popup__box catalog-list-popup__first-box">
+                                    <a class="catalog-list-popup__catalog-item" href="#">Виртуальная реальность</a>
+                                    <a class="catalog-list-popup__catalog-item" href="inner-page.html">Моноподы для селфи</a>
+                                    <a class="catalog-list-popup__catalog-item" href="#">Экшн-камеры</a>
+                                </p>
+                                <p class="catalog-list-popup__box catalog-list-popup__second-box">
+                                    <a href="#">Фитнес-браслеты</a>
+                                    <a class="catalog-list-popup__catalog-item" href="#">Умные часы</a>
+                                </p>
+                                <p class="catalog-list-popup__box catalog-list-popup__third-box">
+                                    <a class="catalog-list-popup__catalog-item" href="#">Квадрокоптеры</a>
+                                </p>
+                            </div>
                         </li>
                         <li class="site-navigation__item site-navigation__delivery">
                             <a href="#service-delivery">Доставка</a>
@@ -60,77 +65,87 @@
                 </nav>
             </div>
         </header>
-        <main class="container">
+        <main class="container main-index">
             <h1 class="visually-hidden">Девайс</h1>
-            <section class="popular-items">
-                <h2 class="visually-hidden">Популярные товары</h2>
-                <ol class="popular-items-list">
-                    <li class="popular-item">
-                        <h3 class="visually-hidden">Селфи-палка</h3>
-                        <img class="popular-item-image" src="" width="" height="" alt="Селфи-палка длиной 8 м и весом 5 кг">
-                        <span class="popular-item-number">01</span>
-                        <span class="popular-item-slogan">Делай селфи, как Бен Стиллер!</span>
-                        <p class="popular-item-promo">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                        <a class="button more-details" href="#">Подробнее</a>
-                        <table class="popular-item-characteristics-list">
-                            <tr class="value">
-                                <td>8,5 м</td>
-                                <td>5 кг</td>
-                                <td>Карбон</td>
-                            </tr>
-                            <tr class="properties">
-                                <td>Длина палки</td>
-                                <td>Вес палки</td>
-                                <td>Материал</td>
-                            </tr>
-                        </table>
-                    </li>
-                    <li class="popular-item">
-                        <h3 class="visually-hidden">Фитнес-браслет</h3>
-                        <img class="popular-item-image" src="" width="" height="" alt="Фитнес-браслет">
-                        <span class="popular-item-number">02</span>
-                        <span class="popular-item-slogan">Худеем правильно!</span>
-                        <p class="popular-item-promo">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                        <a class="button more-details" href="#">Подробнее</a>
-                        <table class="popular-item-characteristics-list">
-                            <tr class="value">
-                                <td>48 часов</td>
-                            </tr>
-                            <tr class="properties">
-                                <td>Без подзарядки</td>
-                            </tr>
-                        </table>
-                    </li>
-                    <li class="popular-item">
-                        <h3 class="visually-hidden">Квадрокоптер</h3>
-                        <img class="popular-item-image" src="" width="" height="" alt="Квадрокоптер с лазером">
-                        <span class="popular-item-number">03</span>
-                        <span class="popular-item-slogan">Порхает как бабочка, жалит как пчела!</span>
-                        <p class="popular-item-promo">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                        <a class="button more-details" href="#">Подробнее</a>
-                        <table class="popular-item-characteristics-list">
-                            <tr class="value">
-                                <td>800 м</td>
-                                <td>50 м</td>
-                            </tr>
-                            <tr class="properties">
-                                <td>Дальность полета</td>
-                                <td>Радиус поражения</td>
-                            </tr>
-                        </table>
-                    </li>
-                </ol>
-                <ul class="slides-switches">
-                    <li class="slide-radio">
-                        <button class="slide-button">Первый слайд</button>
-                    </li>
-                    <li class="slide-radio">
-                        <button class="slide-button">Второй слайд</button>
-                    </li>
-                    <li class="slide-radio">
-                        <button class="slide-button">Третий слайд</button>
-                    </li>
-                </ul>
+            <div class="index-box">
+                <section class="popular-items">
+                    <h2 class="visually-hidden">Популярные товары</h2>
+                    <ol class="popular-items-list">
+                        <li class="popular-item">
+                            <h3 class="visually-hidden">Селфи-палка</h3>
+                            <div class="popular-item-column">
+                                <p class="popular-item-image-box popular-item-selfie">
+                                    <img class="popular-item-image" src="images/slider-1.png" width="384" height="486" alt="Селфи-палка длиной 8 м и весом 5 кг">
+                                </p>
+                                <div class="popular-item-details">
+                                    <span class="popular-item-number">01</span>
+                                    <p class="popular-item-slogan">Делай селфи, <br>
+                                        как Бен Стиллер!</p>
+                                    <p class="popular-item-promo">Самая длинная палка для селфи доступна в нашем магазине. <br>
+                                        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                                    <a class="button more-details" href="#">Подробнее</a>
+                                    <table class="popular-item-characteristics-list">
+                                        <tr class="value">
+                                            <td>8,5 м</td>
+                                            <td>5 кг</td>
+                                            <td>Карбон</td>
+                                        </tr>
+                                        <tr class="properties">
+                                            <td>Длина палки</td>
+                                            <td>Вес палки</td>
+                                            <td>Материал</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li class="popular-item">
+                            <h3 class="visually-hidden">Фитнес-браслет</h3>
+                            <img class="popular-item-image" src="" width="" height="" alt="Фитнес-браслет">
+                            <span class="popular-item-number">02</span>
+                            <span class="popular-item-slogan">Худеем правильно!</span>
+                            <p class="popular-item-promo">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                            <a class="button more-details" href="#">Подробнее</a>
+                            <table class="popular-item-characteristics-list">
+                                <tr class="value">
+                                    <td>48 часов</td>
+                                </tr>
+                                <tr class="properties">
+                                    <td>Без подзарядки</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li class="popular-item">
+                            <h3 class="visually-hidden">Квадрокоптер</h3>
+                            <img class="popular-item-image" src="" width="" height="" alt="Квадрокоптер с лазером">
+                            <span class="popular-item-number">03</span>
+                            <span class="popular-item-slogan">Порхает как бабочка, жалит как пчела!</span>
+                            <p class="popular-item-promo">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                            <a class="button more-details" href="#">Подробнее</a>
+                            <table class="popular-item-characteristics-list">
+                                <tr class="value">
+                                    <td>800 м</td>
+                                    <td>50 м</td>
+                                </tr>
+                                <tr class="properties">
+                                    <td>Дальность полета</td>
+                                    <td>Радиус поражения</td>
+                                </tr>
+                            </table>
+                        </li> -->
+                    </ol>
+                    <ul class="slides-switches">
+                        <li class="slide-radio">
+                            <button class="slide-button">Первый слайд</button>
+                        </li>
+                        <li class="slide-radio">
+                            <button class="slide-button">Второй слайд</button>
+                        </li>
+                        <li class="slide-radio">
+                            <button class="slide-button">Третий слайд</button>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section class="catalog">
                 <h2 class="visually-hidden">Каталог товаров</h2>

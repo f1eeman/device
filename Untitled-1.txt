@@ -54,3 +54,37 @@
     
     background-color: #000000;
 }
+
+.service {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+outline: 2px solid blue;
+}
+
+.service h3 {
+    margin: 0;
+    padding: 0;
+
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: normal;
+}
+
+.service p {
+    width: 440px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: normal;
+outline: 2px solid green;
+}
+
+.credit p {
+    width: 430px;
+}
+

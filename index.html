@@ -15,8 +15,8 @@
                     <div class="user-tools">
                         <div class="user-tools-item user-tools-box" >
                             <form class="user-tools-form" action="https://echo.htmlacademy.ru" method="POST">
-                                <label class="visually-hidden" for="user-seach">Поиск по сайту</label>
                                 <input class="user-tools-seach" type="seach" name="seach" id="user-seach" placeholder="Поиск по сайту">
+                                <label for="user-seach"><span class="visually-hidden">Поиск по сайту</span></label>
                                 <button class="user-tools-submit" type="submit">Найти</button>
                             </form>
                         </div>
@@ -37,7 +37,7 @@
                     <nav class="main-navigation">
                         <ul class="site-navigation">
                             <li class="site-navigation__item site-navigation__catalog">
-                                <a href="catalog.html">Каталог товаров</a>
+                                <a class="site-navigation__main-link" href="catalog.html">Каталог товаров</a>
                                 <div class="site-navigation__catalog-list">
                                     <p class="site-navigation__catalog-box">
                                         <a class="site-navigation__catalog-item" href="#">Виртуальная реальность</a>
@@ -45,7 +45,7 @@
                                         <a class="site-navigation__catalog-item" href="#">Экшн-камеры</a>
                                     </p>
                                     <p class="site-navigation__catalog-box">
-                                        <a class="site-navigation__catalog-item"href="#">Фитнес-браслеты</a>
+                                        <a class="site-navigation__catalog-item" href="#">Фитнес-браслеты</a>
                                         <a class="site-navigation__catalog-item" href="#">Умные часы</a>
                                     </p>
                                     <p class="site-navigation__catalog-box">
@@ -157,13 +157,13 @@
                     </ol>
                     <ul class="slides-switches">
                         <li class="slide-radio">
-                            <button class="slide-button">Первый слайд</button>
+                            <button class="slide-button active"><span class="visually-hidden">Первый слайд</span></button>
                         </li>
                         <li class="slide-radio">
-                            <button class="slide-button">Второй слайд</button>
+                            <button class="slide-button"><span class="visually-hidden">Второй слайд</span></button>
                         </li>
                         <li class="slide-radio">
-                            <button class="slide-button">Третий слайд</button>
+                            <button class="slide-button"><span class="visually-hidden">Третий слайд</span></button>
                         </li>
                     </ul>
                 </div>
@@ -199,14 +199,20 @@
                     <h2 class="visually-hidden">Сервисы</h2>
                     <div class="services-column">
                         <ul class="services-list">
-                            <li class="service-item">
-                                <a class="button services-button" href="#service-delivery">Доставка</a>
+                            <li class="service-item service-item-current">
+                                <a class="button services-button" href="#service-delivery">
+                                    <span class="services-button-content">Доставка</span>
+                                </a>
                             </li>
                             <li class="service-item">
-                                <a class="button services-button" href="#service-warranty">Гарантия</a>
+                                <a class="button services-button" href="#service-warranty">
+                                    <span class="services-button-content">Гарантия</span>
+                                </a>
                             </li>
                             <li class="service-item">
-                                <a class="button services-button" href="#service-credit">Кредит</a>
+                                <a class="button services-button" href="#service-credit">
+                                    <span class="services-button-content">Кредит</span>
+                                </a>
                             </li>
                         </ul>
                         <div class="services-box">
@@ -301,9 +307,21 @@
                 </div>
                 <div class="footer-bottom">
                     <ul class="social-buttons">
-                        <li><a href="#" class="social-button-facebook">facebook</a></li>
-                        <li><a href="#" class="social-button-instagram">instagram</a></li>
-                        <li><a href="#" class="social-button-twitter">twitter</a></li>
+                        <li>
+                            <a href="#" class="social-button-facebook">
+                                <span class="visually-hidden">facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-button-instagram">
+                                <span class="visually-hidden">instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-button-twitter">
+                                <span class="visually-hidden">twitter</span>
+                            </a>
+                        </li>
                     </ul>
                     <p class="copyright">
                         <a href="https://htmlacademy.ru">

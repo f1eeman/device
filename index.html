@@ -83,8 +83,7 @@
                                     <span class="popular-item-number">01</span>
                                     <p class="popular-item-slogan">Делай селфи, <br>
                                         как Бен Стиллер!</p>
-                                    <p class="popular-item-promo">Самая длинная палка для селфи доступна в нашем магазине. <br>
-                                        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                                    <p class="popular-item-promo">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом 5 килограмм.</p>
                                     <a class="button more-details" href="#">
                                         <span class="more-details-content">Подробнее</span>
                                     </a>
@@ -277,9 +276,9 @@
                 <section class="index-column contacts" id="contacts">
                     <h2 class="index-column__title contacts__title">Контакты</h2>
                     <p class="index-column__text contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <p class="index-column__image-box">
+                    <a class="index-column__image-box" href="#">
                         <img class="contacts__map" src="images/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
-                    </p>
+                    </a>
                     <a class="button write-us" href="#write-us">
                         <span class="write-us-content">Напишите нам</span>
                     </a>
@@ -291,7 +290,7 @@
                 <div class="footer-top">
                     <a class="footer-logo">Device</a>
                     <ul class="footer-user-menu">
-                        <li><a href="login.html">Войти</a></li>
+                        <li><a class="login-link" href="login.html">Войти</a></li>
                         <li><a href="compare.html">Сравнить</a></li>
                         <li><a href="cart.html">Корзина</a></li>
                     </ul>                    
@@ -334,7 +333,7 @@
             </div>
         </footer>
         <section class="modal modal-login">
-            <h2 class="visuall-hidden">Личный Кабинет</h2>
+            <h2 class="visually-hidden">Личный Кабинет</h2>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
             <p>
                 <label for="user-login">Логин:</label>
@@ -345,39 +344,47 @@
                 <input class="login-password" type="password" id="user-password" name="password" value="">
             </p>
             <p class="login-password-info">
-                <input class="visually-hidden" type="checkbox" id="login-password-info" name="remember">
-                <label class="login-checkbox" for="login-password-info">Запомните меня</label>
+                <label class="login-checkbox">
+                    <input class="visually-hidden" type="checkbox" name="remember">
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня
+                </label>
                 <a class="restore" href="#">Я забыл пароль</a>
             </p>
-            <button class="button" type="submit">Войти</button>
+            <button class="button submit log-in" type="submit"><span>Войти</span></button>
             </form>
-            <button class="modal-close" type="button">Закрыть</button>
+            <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
         </section>
         <section class="modal modal-write-us" id="write-us">
-            <h2 class="visuall-hidden">Напишите нам</h2>
+            <h2 class="visually-hidden">Напишите нам</h2>
             <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
-                <p class="write-us-item">
-                    <label for="user-name">Ваше имя:</label>
-                    <input class="name" type="text" name="user-name" id="user-name" value="" placeholder="Имя Фамилия">
-                </p>
-                <p class="write-us-item">
-                    <label for="user-email">Ваш e-mail</label>
-                    <input class="email" type="email" name="user-email" id="user-email" value="" placeholder="email@example.com">
+                <div class="modal-write-us-box">
+                    <p class="write-us-item">
+                        <label for="user-name">Ваше имя:</label>
+                        <input class="name" type="text" name="user-name" id="user-name" value="" placeholder="Имя Фамилия">
                     </p>
                     <p class="write-us-item">
-                        <label for="user-text">Текст письма:</label>
-                        <input class="text" type="text" name="user-text" id="user-text" value="" placeholder="В свободной форме">
+                        <label for="user-email">Ваш e-mail</label>
+                        <input class="email" type="email" name="user-email" id="user-email" value="" placeholder="email@example.com">
+                    </p>
+                </div>
+                <p class="write-us-item write-us-item-textarea">
+                    <label for="user-text">Текст письма:</label>
+                    <textarea class="text" name="user-text" id="user-text" placeholder="В свободной форме"></textarea>
                 </p>
-                <button class="button" type="submit">Отправить</button>
+                <button class="button submit" type="submit"><span>Отправить</span></button>
             </form>
-            <button class="modal-close" type="button">Закрыть</button>
+            <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
         </section>
         <section class="modal modal-map ">
-            <h2 class="visuall-hidden">Как до нас добраться</h2>
-            <p>
-                <img src="" width="" height="" alt="г. Москва, ул. Строителей, 15">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <p class="modal-map-box">
+                <img src="images/map-big.jpg" width="960" height="559" alt="г. Москва, ул. Строителей, 15">
             </p>
-            <button class="modal-close" type="button">Закрыть</button>
+            <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
         </section>
+        <div class="modal-overlay"></div>
+        <script src="scripts/popup.js"></script>
+        <!-- <script src="scripts/map.js"></script> -->
     </body>
 </html>

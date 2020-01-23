@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'gilroyextrabold';
-    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2');
+    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gilroylight';
-    src: url('../fonts/gilroy-light-webfont.woff2') format('woff2');
+    src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'), url('../fonts/gilroylight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -258,16 +258,13 @@ input[type="radio"].visually-hidden {
     color: #000000;
 }
 
-.main-header-wrapper a:not(.main-header-logo):hover,
-.main-header-wrapper a:not(.main-header-logo):focus,
-.main-header-logo[href="index.html"]:hover,
-.main-header-logo[href="index.html"]:focus {
-    color: rgba(0, 0, 0, 0.6);
+.main-header-logo[href]:hover .main-header-logo-image,
+.main-header-logo[href]:focus .main-header-logo-image {
+    opacity: 0.6;
 }
 
-.main-header-wrapper a:not(.main-header-logo):active,
-.main-header-logo[href="index.html"]:active {
-    color: rgba(0, 0, 0, 0.3);
+.main-header-logo[href]:active .main-header-logo-image {
+    opacity: 0.3;
 }
 
 .main-header-logo {
@@ -275,10 +272,9 @@ input[type="radio"].visually-hidden {
     top: -23px;
     left: 60px;
 
-    font-size: 48px;
-    line-height: 48px;
-
-    text-transform: uppercase;
+    display: block;
+    width: 164px;
+    height: 36px;
 }
 
 .user-tools {
@@ -1425,20 +1421,18 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-logo {
-    font-size: 48px;
-    line-height: 58px;
-    font-weight: normal;
-    color: #ffc600;
-    text-transform: uppercase;
+    display: block;
+    width: 163px;
+    height: 36px;
 }
 
-.inner-page .footer-logo:hover,
-.inner-page .footer-logo:focus {
-    color: rgba(255, 198, 0, 0.6)
+.footer-logo[href]:hover .footer-logo-image,
+.footer-logo[href]:focus .footer-logo-image {
+    opacity: 0.6;
 }
 
-.inner-page .footer-logo:active {
-    color: rgba(255, 198, 0, 0.3)
+.footer-logo[href]:active .footer-logo-image {
+    opacity: 0.3;
 }
 
 .footer-user-menu {
@@ -2233,14 +2227,12 @@ background-color: #efefef;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
 
     min-height: 70px;
     margin: 0;
     margin-bottom: 70px;
     padding: 0;
+    padding-top: 23px;
 
     font-size: 16px;
     line-height: 24px;
@@ -2433,6 +2425,7 @@ background-color: #efefef;
 }
 
 .filter-option {
+    min-height: 25px;
     margin-bottom: 17px;
     padding-left: 40px;
 }
@@ -2586,6 +2579,7 @@ background-color: #efefef;
 }
 
 .sort-catalog-wrapper {
+    width: 830px;
     padding-left: 70px;
 
     background-color: #ffffff;
@@ -2601,11 +2595,9 @@ background-color: #efefef;
     display: flex;
     -ms-flex-wrap: no-wrap;
         flex-wrap: no-wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     min-height: 70px;
     margin-bottom: 70px;
+    padding-top: 23px;
 }
 
 .sort::before {
@@ -2618,7 +2610,7 @@ background-color: #efefef;
     left: -70px;
     right: 0;
 
-    margin-right: calc(590px - 50vw);
+    margin-right: calc(600px - 50vw);
 
     background-color: rgba(0, 0, 0, 0.08);
 }

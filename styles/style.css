@@ -2213,7 +2213,7 @@ background-color: #efefef;
     top: 0;
     bottom: 0;
 
-    margin-left: calc(50% - 50vw);
+    margin-left: -2000px;
 
     background-color: #eeeeee;
 }

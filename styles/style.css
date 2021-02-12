@@ -230,6 +230,10 @@ input[type="radio"].visually-hidden {
     padding-top: 40px;
 }
 
+.main-index {
+    overflow: hidden;
+}
+
 .container {
     width: 1200px;
     padding: 0 20px;
@@ -2611,7 +2615,7 @@ background-color: #efefef;
     left: -70px;
     right: 0;
 
-    margin-right: calc(600px - 50vw);
+    margin-right: -2500px;
 
     background-color: rgba(0, 0, 0, 0.08);
 }
